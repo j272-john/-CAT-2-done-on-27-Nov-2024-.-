@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #ddd;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        button {
+            background-color: #9933cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .weather-info {
+            margin-top: 30px;
+        }
+
+        .city {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .temp {
+            font-size: 64px;
+            color: #9933cc;
+        }
+
+        .description {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .forecast {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .day {
+            text-align: center;
+        }
+
+        .day img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .day p {
+            margin: 0;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        .footer a {
+            color: #9933cc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Weather Application</h1>
+    <input type="text" placeholder="Enter city name" />
+    <button>SEARCH</button>
+    <div class="weather-info">
+        <div class="city">Paris</div>
+        <div class="temp">Temperature</div>
+        <div class="description">Paris <br>temp 19&deg;C<br>scattered clouds<br>
+humidity:67<br>
+wind speed:15</div>
+    </div>
+    <div class="forecast">
+        <div class="day">
+            <img src="icon.png" alt="Weather Icon">
+            <p>Monday</p>
+            <p> 18&deg;C</p>
+        </div>
+        <div class="day">
+            <img src="icon.png" alt="Weather Icon">
+            <p>Tuesday</p>
+            <p> 21&deg;C</p>
+        </div>
+        <div class="day">
+            <img src="icon.png" alt="Weather Icon">
+            <p>Wednesday</p>
+            <p>24&deg;C</p>
+        </div>
+  <div class="day">
+            <img src="icon.png" alt="Weather Icon">
+            <p>Thursday </p>
+            <p> 19&deg;C</p>
+        </div>
+  <div class="day">
+            <img src="icon.png" alt="Weather Icon">
+            <p>Friday</p>
+            <p> 19&deg;C</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>2024 Weather App. And hosted by
+ "<a href="https://rennishweatherapp.netlify.app/" target="_blank">Netlify</a> 
+"</a></p>
+    </div>
+</div>
+
+</body>
+</html> 
